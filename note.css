@@ -174,12 +174,13 @@ main {
   cursor: pointer;
   transition: 0.2s;
   border: 1px solid transparent;
+  box-shadow: 7px 7px 7px rgba(0, 195, 255, 0.212);
 }
 
 .note:hover {
   transform: translateY(-2px) scale(1.02);
   box-shadow: 0 12px 32px rgba(43, 52, 55, 0.08);
-  border-color: rgba(0, 0, 0, 0.05);
+  border-color: rgb(255, 255, 255);
 }
 
 /* NOTE TITLE */
