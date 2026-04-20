@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="note.css" />
+  </head>
+
+  <body>
+    <div id="vanta-birds"></div>
+    <!-- HEADER -->
+    <header>
+      <div>
+        <div class="logo">Notes</div>
+
+        <div class="search">
+          <span
+            class="material-symbols-outlined search-note"
+            style="position: absolute; left: 12px; top: 10px"
+            >search</span
+          >
+          <input
+            class="search-input"
+            type="text"
+            placeholder="Search your thoughts..."
+          />
+        </div>
+
+        <button class="icon-btn" id="themeToggle">
+          <span class="material-symbols-outlined">dark_mode</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- LEFT (Compose) -->
+      <section class="compose">
+        <h2>Compose</h2>
+        <p style="color: #586064; font-size: 13px; margin-bottom: 20px">
+          Capture your ideas instantly.
+        </p>
+
+        <input id="noteTitle" placeholder="Title" />
+        <textarea
+          id="noteContent"
+          rows="8"
+          placeholder="Start writing..."
+        ></textarea>
+
+        <button class="btn" id="addNoteBtn">Add Note</button>
+      </section>
+
+      <!-- RIGHT (Notes) -->
+      <section class="notes" id="notesContainer">
+        <!-- Example Note -->
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script src="note.js"></script>
+  </body>
+</html>
