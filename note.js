@@ -3,7 +3,7 @@ function renderNote() {
   const searchInput = document.querySelector(".search-input").value;
   let filteredNotes = notes;
   filteredNotes = notes.filter((note) => {
-    return note.title.includes(searchInput);
+    return note.title.toLowerCase().includes(searchInput.toLowerCase());
   });
   let htmlNote = "";
   filteredNotes.forEach((note, index) => {
